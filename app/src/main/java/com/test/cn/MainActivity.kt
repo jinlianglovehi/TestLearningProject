@@ -46,8 +46,6 @@ class MainActivity : AppCompatActivity() {
     }
 
     fun testDataType() {
-
-
         var huhu: Int = 0; // 定义的是数据类型信息
         var dou: Double = huhu.toDouble();// 将int 转换为double 数据类型
 
@@ -55,8 +53,45 @@ class MainActivity : AppCompatActivity() {
         var studentModel =StudentModel();
         // 获取属性　
         var name = studentModel.name ;
+    }
+
+    fun testArrayList(){
+        val array = arrayListOf<String>()
+        array.add("aaa")
+        array.add("bbb")
+        array.add("ccc")
+        array.add("test");
+       if("aaa" in array){// 判断元素中是否含有
+       }
 
     }
+
+    // 测试hashMap
+    fun testHashMap(){
+
+        // 添加测试代码
+        var demo = hashMapOf<String,Int>();
+        demo.put("one",1);
+        demo.put("two",2);
+
+
+        val map = hashMapOf<String, Int>()
+        map.put("one", 1)
+        map.put("two", 2)
+
+        for ((key, value) in map) {
+            println("key = $key, value = $value")
+        }
+
+
+
+    }
+
+
+
+
+
+
 
 
 
